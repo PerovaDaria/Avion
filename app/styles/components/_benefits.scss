@@ -1,0 +1,71 @@
+.benefits {
+    &__inner {
+        padding: 50px 0;
+        @include container;
+    }
+
+    &__title {
+        font-size: $mobile_font-benefits-title;
+        margin-bottom: 35px;
+        max-width: 300px;
+
+            @include media-breakpoint-up ('tablet') {
+                max-width: none;
+                font-size: $desktop_font-benefits-title;
+                text-align: center;
+            }
+    }
+
+    &__list {
+        @include media-breakpoint-up ('desktop') {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    &__list-item {
+        background-color: $benefits-item-background;
+        padding: 36px 24px;
+        margin-bottom: 35px;
+        transition: all 0.5s ease-in-out;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &:hover {
+            box-shadow: 5px 5px 0px 0px rgba(0,0,0,0.75);
+        }
+
+            @include media-breakpoint-up ('desktop') {
+                margin-bottom: 0;
+                padding: 50px;
+                width: 24%;
+            }
+    }
+
+    &__list-icon {
+        display: block;
+        color: $benefits-icon;
+        background-color: transparent;
+        font-family: "iconFont";
+        font-size: $mobile_font-benefits-icon;
+        margin-bottom: 12px;
+    }
+
+    &__list-title {
+        font-family: $main-font; 
+        font-weight: 400;
+        font-size: $mobile_font-benefits-title;
+        color: $benefits-title;
+        margin-bottom: 20px;
+    }
+
+    &__list-description {
+        font-family: $secondary-font; 
+        font-weight: 400;
+        font-size: $mobile_font-benefits-description;
+        line-height: $mobile_line-height-benefits-description;
+        color: $benefits-description;
+    }
+}
