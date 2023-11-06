@@ -1,0 +1,33 @@
+@mixin container {
+    width: 100%;
+    max-width: 340px;
+    margin: 0 auto;
+
+    @include media-breakpoint-up('tablet') {
+        width: 100%;
+        max-width: 730px;
+    }
+
+    @include media-breakpoint-up('desktop') {
+        width: 100%;
+        max-width: 1280px;
+    }
+}
+
+@mixin media-breakpoint-up($media) {
+    @if ($media == 'tablet') {
+        @media screen and (min-width: $tablet) {
+            @content;
+        }
+    }
+    @if ($media == 'desktop') {
+        @media screen and (min-width: $desktop) {
+            @content;
+        }
+    }
+    @if ($media == 'large-desktop') {
+        @media screen and (min-width: $large-desktop) {
+            @content;
+        }
+    }
+}

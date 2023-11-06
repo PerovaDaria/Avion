@@ -1,0 +1,15 @@
+.button {
+    font-family: $secondary-font;
+    font-weight: 400;
+    font-size: $mobile_font-sizes_button;
+    line-height: $mobile_line-height_button;
+    color: $button;
+    background-color: $button-background;
+    padding: 0 30px;
+    transition: all 0.5s ease-in-out;
+
+    &:hover {
+        color: $button--hover;
+        background-color: $button-background--hover;
+    }
+}

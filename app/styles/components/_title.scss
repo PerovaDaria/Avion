@@ -1,0 +1,12 @@
+.title {
+    font-family: $main-font;
+    font-weight: 400;
+    font-size: $mobile_font-sizes_title;
+    line-height: $mobile_line-height_title;
+    color: $title;
+
+    @include media-breakpoint-up ('tablet') {
+        font-size: $desktop_font-sizes_title;
+        line-height: $desktop_line-height_title;
+    }
+}

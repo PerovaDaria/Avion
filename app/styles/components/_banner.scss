@@ -1,0 +1,87 @@
+.banner {
+    position: relative;
+
+    &__inner {
+        @include container;
+        padding: 45px 0 30px;
+
+        @include media-breakpoint-up ('tablet') {
+            padding: 30px 0;
+        }
+
+        @include media-breakpoint-up ('desktop') {
+            padding: 130px 0;
+        }
+    }
+
+    &__box {
+        @include media-breakpoint-up ('tablet') {
+            background-color: $banner-inner;
+            max-width: 630px;
+            margin-left: auto;
+            padding: 50px 80px 50px 55px;
+            transition: all 0.5s ease-in-out;
+
+            &:hover {
+                box-shadow: 5px 5px 0px 0px rgba(0,0,0,0.75);
+            }
+        }
+    }
+
+    &__text {
+        margin: 10px 0 30px;
+
+        @include media-breakpoint-up ('tablet') {
+            margin: 20px 0 45px;
+        }
+
+        @include media-breakpoint-up ('desktop') {
+            margin: 20px 0 155px;
+        }
+    }
+
+    &__text-description {
+        font-family: $secondary-font;
+        font-weight: 400;
+        font-size: $mobile_font-sizes_banner-description;
+        line-height: $mobile_line-height_banner-description;
+        color: $banner-description;
+
+        &--mobile {
+            @include media-breakpoint-up ('tablet') {
+                display: none;
+            }
+        }
+
+        &--desktop {
+            display: none;
+
+            @include media-breakpoint-up ('tablet') {
+                display: block;
+                font-size: $desktop_font-sizes_banner-description;
+                line-height: $desktop_line-height_banner-description;
+                color: $banner-description--desktop;
+            }
+        }
+    }
+
+    &__button {
+        width: 100%;
+
+        @include media-breakpoint-up ('tablet') {
+            width: auto;
+        }
+    }
+
+    &__image {
+        aspect-ratio: 1.2/1;
+        object-fit: cover;
+
+        @include media-breakpoint-up ('tablet') {
+            aspect-ratio: 1/0.5;
+            position: absolute;
+            top: 0;
+            z-index: -1;
+        }
+    }
+}

@@ -1,0 +1,86 @@
+@font-face {
+	font-family: "iconFont";
+	src: url('../fonts/iconFont.eot');
+	src: url('../fonts/iconFont.eot?#iefix') format('eot'),
+		url('../fonts/iconFont.woff2') format('woff2'),
+		url('../fonts/iconFont.woff') format('woff'),
+		url('../fonts/iconFont.ttf') format('truetype'),
+		url('../fonts/iconFont.svg#iconFont') format('svg');
+}
+
+.icon:before {
+	font-family: "iconFont";
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	/* speak: none; only necessary if not using the private unicode range (firstGlyph option) */
+	text-decoration: none;
+	text-transform: none;
+}
+
+
+.icon-cart:before {
+	content: "\E001";
+}
+
+.icon-checkmark:before {
+	content: "\E002";
+}
+
+.icon-close:before {
+	content: "\E003";
+}
+
+.icon-delivery:before {
+	content: "\E004";
+}
+
+.icon-down:before {
+	content: "\E005";
+}
+
+.icon-facebook:before {
+	content: "\E006";
+}
+
+.icon-instagram:before {
+	content: "\E007";
+}
+
+.icon-linkedin:before {
+	content: "\E008";
+}
+
+.icon-menu:before {
+	content: "\E009";
+}
+
+.icon-pinterest:before {
+	content: "\E00A";
+}
+
+.icon-purchase:before {
+	content: "\E00B";
+}
+
+.icon-search:before {
+	content: "\E00C";
+}
+
+.icon-skype:before {
+	content: "\E00D";
+}
+
+.icon-sprout:before {
+	content: "\E00E";
+}
+
+.icon-twitter:before {
+	content: "\E00F";
+}
+
+.icon-user:before {
+	content: "\E010";
+}
